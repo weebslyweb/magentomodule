@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Mymodule_Layout>
+			<version>0.0.1</version>
+		</Mymodule_Layout>
+	</modules>
+	<global>
+		<blocks>
+			<mymodule_layout>
+				<class>Mymodule_Layout_Block</class>
+			</mymodule_layout>
+		</blocks>
+	</global>
+	<frontend>
+		<routers>
+			<layout>
+				<use>standard</use>
+				<args>
+					<module>Mymodule_Layout</module>
+					<frontName>layout</frontName>
+				</args>
+			</layout>
+		</routers>
+	
+		<layout>
+			<updates>
+				<mymodule_layout module="Mymodule_Layout">
+					<file>mymodule_layout.xml</file>					
+				</mymodule_layout>
+			</updates>
+		</layout>
+	</frontend>	
+</config>

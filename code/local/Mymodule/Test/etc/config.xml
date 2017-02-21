@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Mymodule_Test>
+			<version>0.1.0</version>
+		</Mymodule_Test>
+	</modules>
+	<frontend>
+		<routers>
+			<test>
+				<use>standard</use>
+				<args>
+					<module>Mymodule_Test</module>
+					<frontName>test</frontName>
+				</args>
+			</test>
+		</routers>
+	</frontend>
+	<global>
+		<models>
+            <mymodule_test>
+                <class>Mymodule_Test_Model</class>
+                <resourceModel>mymodule_test_resource</resourceModel>
+            </mymodule_test>
+            <mymodule_test_resource>
+                <class>Mymodule_Test_Model_Resource</class>
+                <entities>
+                    <ticket>
+                        <table>mymodule_test_ticket</table>
+                    </ticket>
+                    <comment>
+                        <table>mymodule_test_comment</table>
+                    </comment>
+                </entities>
+            </mymodule_test_resource>
+        </models>
+        <resources>
+            <mymodule_test_setup>
+                <setup>
+                    <module>Mymodule_Test</module>
+                </setup>
+            </mymodule_test_setup>
+        </resources>
+	</global>
+</config>

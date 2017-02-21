@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Mymodule_Core>
+			<version>0.0.1</version>
+		</Mymodule_Core>
+	</modules>
+	<global>
+		<blocks>
+			<core>
+				<rewrite>
+					<template>Mymodule_Core_Block_Template</template>
+				</rewrite>
+			</core>
+		</blocks>
+	</global>
+</config>

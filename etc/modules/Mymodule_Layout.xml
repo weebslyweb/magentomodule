@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Mymodule_Layout>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Mymodule_Layout>
+	</modules>
+</config>

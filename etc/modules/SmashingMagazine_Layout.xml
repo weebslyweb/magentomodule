@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <SmashingMagazine_Layout>
+            <active>false</active>
+            <codePool>local</codePool>
+        </SmashingMagazine_Layout>
+    </modules>
+</config>

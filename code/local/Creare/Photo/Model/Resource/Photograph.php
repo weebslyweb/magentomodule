@@ -1,0 +1,9 @@
+<?php
+ 
+class Creare_Photo_Model_Resource_Photograph extends Mage_Core_Model_Resource_Db_Abstract
+{
+    protected function _construct()
+    {
+        $this->_init('photo/photograph', 'entity_id');
+    }
+}

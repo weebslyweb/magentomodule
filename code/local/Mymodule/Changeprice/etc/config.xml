@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Mymodule_Changeprice>
+			<version>0.0.1</version>
+		</Mymodule_Changeprice>
+	</modules>
+	<global>
+		<models>
+			<mymodule_changeprice>
+				<class>Mymodule_Changeprice_Model</class>
+			</mymodule_changeprice>
+		</models>
+		<events>
+			<checkout_cart_product_add_after>
+				<observers>
+					<mymodule_changeprice_observer>
+						<class>mymodule_changeprice/observer</class>
+						<method>change_price</method>
+					</mymodule_changeprice_observer>
+				</observers>
+			</checkout_cart_product_add_after>
+		</events>
+	</global>
+</config>
